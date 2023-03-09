@@ -1,0 +1,43 @@
+git으로 버전관리하기
+1. local repository만들기
+    1. cmd 혹은 terminal로 local repository로 만들고 싶은
+    폴더로 이동하기
+        cd 명령어를 활용하여 이동
+        ex) cd "폴더 이름/폴더이름/폴더이름"
+
+        .. 은 상위폴더를 의미한다
+        ex) cd ../../폴더1
+        --> 현재위치로부터 상위폴더 의 상위폴더 안의 폴더1로 이동
+
+        terminal 살행방법
+        상단 Terminal 탭 > New Terminal클릭
+        
+        
+2. git init 
+    git init 명령어를 실행하면 해당 폴더가 버전관리를 할 수 있는 폴더로 변경된다
+    .git 폴더가 생성되면 성공!
+    .git 폴더는 보통은 안보이게 설정됨
+
+
+
+2. git stage에 수정사항 올리기 
+
+
+깃의 작동원리
+    깃은 논리적으로 working tree / stage / repository 로 나누어 파일들을 관리한다
+    
+    
+working tree
+    실질적으로 내가 작업하는 작업공간
+    작업공간에서 새롭게 만든 파일들은 기본적으로 git이 추적하지 못하는 상태
+    스테이지에 올라가지 않은 상태
+
+git status
+    git 저장소의 상태를 확인해줘
+
+git add 파일이름
+    해당파일을 stage에 올려줘
+    untracked(git 저장소 내에서 새롭게 만든 파일들) 파일들은 tracked 상태로 변경되고,
+    stage에 해당 내용들이 올라간다
+
+    
